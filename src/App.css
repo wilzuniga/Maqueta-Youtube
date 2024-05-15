@@ -9,19 +9,19 @@
 }
 .nav-link,
 .nav-dropdown {
-  color: white !important; /* Text color for Nav.Link and NavDropdown */
+  color: white !important; 
 }
 
 .nav-link:hover,
 .nav-dropdown .dropdown-toggle::after {
-  color: lightgray; /* Hover color for Nav.Link and dropdown arrow color */
+  color: lightgray; 
 }
 
 .navbar-search .form-control {
-  color: black; /* Text color for search input (override to black if needed) */
+  color: black; 
 }
 
 .navbar-search .btn-outline-success {
   color: white;
-  border-color: white; /* Search button text and border color */
+  border-color: white; 
 }
