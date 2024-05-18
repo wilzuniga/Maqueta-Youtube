@@ -7,8 +7,8 @@
 }
 
 .videoImg{
-    width: 295px;
-    height: 162px;
+    width: 395px;
+    height: 250px;
     margin-bottom: 0;
     border-radius: 15px;
 }
@@ -31,8 +31,10 @@
 }
 
 .channelDetails h5{
+    
     margin-top: -5px;
-    color : rgb(26,26,026);
+    margin-bottom: 20px;
+    color : rgb(192, 192, 192);
 }
 
 .duration{

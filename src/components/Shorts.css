@@ -25,7 +25,7 @@
 
 .channelDetails p{
     margin-top: -18px;
-    font-size: 14px;
+    font-size: 154px;
     font-weight: 550;
     color: rgb(122,122,122);
     margin-bottom: 15px;
@@ -50,6 +50,7 @@
     font-weight: 600;
     opacity: 0.9;
 }
+ /* hoover efects */
 
 .videoCubo:hover{
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);

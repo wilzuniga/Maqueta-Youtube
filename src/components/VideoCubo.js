@@ -1,6 +1,8 @@
 import React from 'react'
 import { More, MoreVert, PlaylistAdd, WatchLater } from '@material-ui/icons';
 import { Avatar } from '@material-ui/core';
+import './VideoCubo.css'
+
 export const VideoCubo = (props) => {
   return (
     <div className='videoCubo'>

@@ -1,4 +1,5 @@
 import React from 'react'
+import './Shorts.css'
 
 export const Shorts = (props) => {
   return (
