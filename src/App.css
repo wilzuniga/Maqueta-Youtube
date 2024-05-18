@@ -51,7 +51,7 @@
   background-color: #272727; 
 }
 
-
+{/*Side Bar */}
 
 .sidebar {
   width: 100px;
@@ -64,8 +64,26 @@
   color: white;
   padding-top: 20px;
   padding-left: 2px;
+  overflow-y: auto;
 }
 
+.sidebar::-webkit-scrollbar {
+  width: 10px; 
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: #272727;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #555; 
+  border-radius: 5px; 
+}
+
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background-color: #333; 
+}
 .sidebar .nav-icon{
   margin-left: 20px;
 }
@@ -193,6 +211,23 @@
 }
 .expandedWrapperVideoT{
   margin-left: 250px;
+}
+.WrapperVideoT::-webkit-scrollbar {
+  width: 10px; 
+}
+
+.WrapperVideoT::-webkit-scrollbar-track {
+  background: #272727;
+}
+
+.WrapperVideoT::-webkit-scrollbar-thumb {
+  background-color: #555; 
+  border-radius: 5px; 
+}
+
+
+.WrapperVideoT::-webkit-scrollbar-thumb:hover {
+  background-color: #333; 
 }
 .App {
   background: #0F0F0F;
