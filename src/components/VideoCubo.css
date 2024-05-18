@@ -1,0 +1,66 @@
+.videoCubo{
+    margin-bottom: auto;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.videoImg{
+    width: 295px;
+    height: 162px;
+    margin-bottom: 0;
+    border-radius: 15px;
+}
+
+.videoDat{
+    display: flex;
+    padding-top: 10px;
+}
+
+.channelDetails{
+    margin-left: 10px;
+}
+
+.channelDetails p{
+    margin-top: -18px;
+    font-size: 14px;
+    font-weight: 550;
+    color: rgb(122,122,122);
+    margin-bottom: 15px;
+}
+
+.channelDetails h5{
+    margin-top: -5px;
+    color : rgb(26,26,026);
+}
+
+.duration{
+    background-color: rgb(31, 31, 31);
+    width: 40px;
+    height: 18px;
+    text-align: center;
+    color: white;
+    border-radius: 3px;
+    position: absolute;
+    top: 135px;
+    right: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    opacity: 0.9;
+}
+ /* hoover efects */
+
+.videoCubo:hover{
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.videoImg:hover{
+    opacity: 0.8;
+}
+
+.duration:hover{
+    opacity: 1;
+}
+

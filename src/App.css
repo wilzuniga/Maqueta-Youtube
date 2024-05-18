@@ -1,6 +1,12 @@
 .navBar{
     background-color: #0F0F0F;
-    
+    box-shadow: 0 4px 6px -6px #222;
+  z-index: 1030; 
+}
+.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .brand-text {
     color: white;
@@ -24,4 +30,170 @@
 .navbar-search .btn-outline-success {
   color: white;
   border-color: white; 
+}
+.image-container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+.image-container img {
+  border: 10px transparent solid;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.image {
+  transition: filter 0.3s ease;
+}
+.hovered {
+  background-color: #272727; 
+}
+
+
+
+.sidebar {
+  width: 100px;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #0F0F0F;
+  color: white;
+  padding-top: 20px;
+  padding-left: 2px;
+}
+
+.sidebar .nav-icon{
+  margin-left: 20px;
+}
+
+.sidebar .nav-link {
+  color: white;
+  margin-top: 10px;
+  margin-left: 0px;
+  width: 80px;
+  border-radius: 4px; 
+  font-size: 10px;
+  padding-left: 10px;
+}
+.expanded .nav-link-expanded{
+  color: white;
+  margin-top: 0px;
+  margin-left: 0px;
+  width: 210px;
+  border-radius: 4px; 
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 10px;
+
+}.expanded .nav-link-expanded .span-t{
+  padding-left: 20px;
+}
+
+.sidebar.nav-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.sidebar .nav-link:hover {
+  background-color: #575757;
+}
+.expanded {
+  width: 250px;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #0F0F0F;
+  color: white;
+  padding-top: 20px;
+  padding-left: 2px;
+}
+
+.containerWrapperVideos{ 
+  background-color: #0F0F0F;
+  color: white;
+}
+{/* Carrousel*/}
+
+
+.fixed-carrousel {
+  padding-top: 20px;
+  position: relative;
+  background-color: #0F0F0F;
+  color: white;
+  display: flex;
+  align-items: center;
+  
+}
+.scroll-container::-webkit-scrollbar {
+  display: none; 
+} 
+
+
+.CarrouselText{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  margin-left: 100px;
+}
+
+.expandedCarrouselText{
+  margin-left: 250px;
+  padding-top: 20px;
+  position: relative;
+  background-color: #0F0F0F;
+  color: white;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.scroll-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto; 
+  white-space: nowrap; 
+  flex: 1;
+}
+
+.scroll-item {
+  display: inline-block;
+  padding: 1px 20px;
+  background: #575757;
+  border-radius: 5px;
+  user-select: none; 
+}
+
+
+
+{/* HomeWrapper*/}
+.WrapperVideo{
+  background-color: #0F0F0F;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+}
+.WrapperVideoT{
+  margin-left: 100px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0px;
+}
+.expandedWrapperVideoT{
+  margin-left: 250px;
+}
+.App {
+  background: #0F0F0F;
 }
