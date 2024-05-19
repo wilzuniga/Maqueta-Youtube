@@ -23,7 +23,7 @@ Mini YouTube es una versión simplificada de la página principal de YouTube, di
 - Alberth Alexander Godoy 
 - Wilmer Antonio Zuniga
 
-##Instalación y Ejecución
+## Instalación y Ejecución
 ### `git clone https://github.com/tu-usuario/mini-youtube.git`
 ### `npm install`
 ### `npm install @material-ui/core @material-ui/icons --legacy-peer-deps`
