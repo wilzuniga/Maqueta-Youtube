@@ -1,5 +1,5 @@
-.WrapperVideoT {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 16px;
-  }
+.titulochic{
+    margin-top: 10px;
+    margin-right: auto;
+    
+}

@@ -1,15 +1,29 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import { Container } from 'react-bootstrap'
 import { Shorts } from './Shorts'
 import { VideoCubo } from './VideoCubo'
+import imgLeftArrow from "../img/left-arrow.png"
+import imgRightArrow from "../img/right-arrow.png"
+import './HomeWrapper.css'
+
 export const HomeWrapper = ({expanded}) => {
+  const scrollContainer = useRef(null);
+
+  const scrollLeft = () => {
+    scrollContainer.current.scrollBy({ left: -200, behavior: 'smooth' });
+  };
+
+  const scrollRight = () => {
+    scrollContainer.current.scrollBy({ left: 200, behavior: 'smooth' });
+  };
+  
   const miniaturas = [
     'https://randompicturegenerator.com/img/picture-generator/54e2d24b4e55ad14f1dc8460962e33791c3ad6e04e507441722a72dd9e44c0_640.jpg',
-    'https://randompicturegenerator.com/img/picture-generator/55e4d6404354a814f1dc8460962e33791c3ad6e04e507440762a7cd1934cc4_640.jpg',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShoPlmdI9Je7Zk_xEU4aRAIy-3ebZiUlx9fQ&usqp=CAU',
     'https://randompicturegenerator.com/img/picture-generator/odd-socks-4424190_640.jpg',
-    'https://randompicturegenerator.com/img/picture-generator/5ee4d1404a4faa0df7c5d57bc32f3e7b1d3ac3e45659784f70267edc94_640.jpg',
+    'https://s.yimg.com/ny/api/res/1.2/ujhbKBvPoRp72zKNdLrREg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQ4MA--/https://media.zenfs.com/en/insider_articles_922/c6ce8d0b9a7b28f9c2dee8171da98b8f',
     'https://random.onl/images/pictures/cat18.jpg',
-    'https://random.onl/images/pictures/cat19.jpg',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_DgWhv7FDDUAOHSzvIteDTikjGavh2psUUw&usqp=CAU',
     'https://random.onl/images/pictures/cat20.jpg',
     'https://random.onl/images/pictures/cat21.jpg',];
   
@@ -21,7 +35,9 @@ export const HomeWrapper = ({expanded}) => {
       'https://randompicturegenerator.com/img/picture-generator/53e0d74b4250ad14f1dc8460962e33791c3ad6e04e50744172277fd09549cd_640.jpg',
       'https://randompicturegenerator.com/img/picture-generator/54e3dd404c5aaf14f1dc8460962e33791c3ad6e04e5074417c2f7dd6954cc1_640.jpg',
       'https://randompicturegenerator.com/img/picture-generator/54e2d24b4e55ad14f1dc8460962e33791c3ad6e04e507441722a72dd9e44c0_640.jpg',
-      'https://randompicturegenerator.com/img/picture-generator/55e4d6404354a814f1dc8460962e33791c3ad6e04e507440762a7cd1934cc4_640.jpg',];
+      'https://randompicturegenerator.com/img/picture-generator/55e4d6404354a814f1dc8460962e33791c3ad6e04e507440762a7cd1934cc4_640.jpg',
+      'https://random.onl/images/pictures/cat21.jpg',
+];
   
   const canales = [
     'Canal1',
@@ -120,38 +136,104 @@ export const HomeWrapper = ({expanded}) => {
     'https://via.placeholder.com/150/FFC0CB',
     'https://via.placeholder.com/150/FFD700',
     'https://via.placeholder.com/150/4B0082'];
+
+
   
     
-  return (
-    <Container fluid className='WrapperVideo me-5'>
-      
-      <div className={`WrapperVideoT ${expanded ? 'expandedWrapperVideoT' : 'WrapperVideoT'}`}>
-      {miniaturas.map((miniatura, index) => (
-                <VideoCubo
-                    key={index}
-                    miniatura={miniatura}
-                    locoCanal={avatares[index]}
-                    titulo={titulos[index]}
-                    NameCanal={nombresCanales[index]}
-                    Views={views[index]}
-                    Tiempo={tiempos[index]}
-                    duration={duraciones[index]}
-                />
+    return (
+      <Container fluid className='WrapperVideo me-5'>
+        <div className={`WrapperVideoT ${expanded ? 'expandedWrapperVideoT' : 'WrapperVideoT'}`}>
+        <h4>Continuar Viendo</h4>
+        </div>
+        <div className={`WrapperVideoT ${expanded ? 'expandedWrapperVideoT' : 'WrapperVideoT'}`}>
+        {miniaturas.map((miniatura, index) => (
+                  <VideoCubo
+                      key={index}
+                      miniatura={miniatura}
+                      locoCanal={avatares[index]}
+                      titulo={titulos[index]}
+                      NameCanal={nombresCanales[index]}
+                      Views={views[index]}
+                      Tiempo={tiempos[index]}
+                      duration={duraciones[index]}
+                  />
+  
+              ))}  
+        </div>
 
-            ))}
+        <div className={`WrapperVideoT ${expanded ? 'expandedWrapperVideoT' : 'WrapperVideoT'}`}>
+        <h4>Recomendados</h4>
+        </div>
+        <div className={`WrapperVideoT ${expanded ? 'expandedWrapperVideoT' : 'WrapperVideoT'}`}>
+        {miniaturas.map((miniatura, index) => (
+                  <VideoCubo
+                      key={index}
+                      miniatura={miniatura}
+                      locoCanal={avatares[index]}
+                      titulo={titulos[index]}
+                      NameCanal={nombresCanales[index]}
+                      Views={views[index]}
+                      Tiempo={tiempos[index]}
+                      duration={duraciones[index]}
+                  />
+  
+              ))}  
+          </div>
+
+
+        <div className={`WrapperVideoT ${expanded ? 'expandedWrapperVideoT' : 'WrapperVideoT'}`}>
+        <h4>Mi Mix</h4>
+        </div>
+        <div className={`WrapperVideoT ${expanded ? 'expandedWrapperVideoT' : 'WrapperVideoT'}`}>
+        {miniaturas.map((miniatura, index) => (
+                  <VideoCubo
+                      key={index}
+                      miniatura={miniatura}
+                      locoCanal={avatares[index]}
+                      titulo={titulos[index]}
+                      NameCanal={nombresCanales[index]}
+                      Views={views[index]}
+                      Tiempo={tiempos[index]}
+                      duration={duraciones[index]}
+                  />
+  
+              ))}  
+          </div>
+
+          <div className={`WrapperVideoT ${expanded ? 'expandedWrapperVideoT' : 'WrapperVideoT'}`}>
+        <h4>Youtube Shorts</h4>
+        </div>
+          <div className={`CarrouselText ${expanded ? 'expandedCarrouselText' : 'CarrouselText'}`}>
+      <img src={imgLeftArrow} alt="left" className="nav-iconCarrousel" width="20" height="20" onClick={scrollLeft}></img>
+      <div className="scroll-container" id="scroll-container" ref={scrollContainer}>
+          
+          {miniaturas1.map((miniatura, index) => (
+                      <Shorts
+                          key={index}
+                          miniatura={miniatura}
+                          titulo={titulos[index]}
+                          Views={views[index]}
+                      />
+      
+                  ))}
 
           {miniaturas1.map((miniatura, index) => (
-                <Shorts
-                    key={index}
-                    miniatura={miniatura}
-                    titulo={titulos[index]}
-                    Views={views[index]}
-
-                />
-
-            ))}
-
+                            <Shorts
+                                key={index}
+                                miniatura={miniatura}
+                                titulo={titulos[index]}
+                                Views={views[index]}
+                            />
+            
+                        ))}
+        
         </div>
-      </Container>
-  )
+        <img src={imgRightArrow} alt="right" className="nav-iconCarrousel" width="20" height="20" onClick={scrollRight}></img>
+        </div>
+
+        </Container>
+    )
+    
+    
+    
 }

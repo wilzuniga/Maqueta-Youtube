@@ -31,7 +31,6 @@
 }
 
 .channelDetails h5{
-    
     margin-top: -5px;
     margin-bottom: 20px;
     color : rgb(192, 192, 192);
@@ -45,7 +44,7 @@
     color: white;
     border-radius: 3px;
     position: absolute;
-    top: 135px;
+    top: 225px;
     right: 10px;
     font-size: 12px;
     font-weight: 600;
