@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# Mini YouTube
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este repositorio contiene el proyecto Mini YouTube, desarrollado como parte del examen parcial de Experiencia de Usuario en UNITEC. El objetivo del proyecto es recrear la página principal de YouTube utilizando React, CSS, JavaScript y HTML, siguiendo el Diseño Centrado en el Usuario (DCU).
 
-## Available Scripts
+## Descripción del Proyecto
 
-In the project directory, you can run:
+Mini YouTube es una versión simplificada de la página principal de YouTube, diseñada para ser responsiva y mantener una interfaz visualmente similar a la original. El proyecto incluye las siguientes secciones:
 
+- **Barra lateral**: Menú estático sin funcionalidad.
+- **Barra de navegación superior**: Incluye logo, barra de búsqueda, búsqueda por voz, notificaciones y foto de perfil (sin funcionalidad activa).
+- **Barra de recomendaciones rápida**: Lista horizontal de recomendaciones.
+- **Secciones de Continuar viendo, Recomendados y Mi Mix**: Listas horizontales de videos con imagen, título, tiempo de subida, nombre y fotografía del canal.
+- **Sección de YouTube Shorts**: Lista horizontal de videos cortos.
+
+## Requisitos del Proyecto
+
+1. La página debe adaptarse a diferentes tamaños de pantalla.
+2. Debe seguir los requerimientos visuales especificados en el examen.
+3. Debe implementar buenas prácticas de programación y diseño atómico.
+4. Utilizar imágenes y textos de muestra (hardcoded) para simular el contenido real de YouTube.
+
+## Contribuyentes
+- Alberth Alexander Godoy 
+- Wilmer Antonio Zuniga
+
+##Instalación y Ejecución
+### `git clone https://github.com/tu-usuario/mini-youtube.git`
+### `npm install`
+### `npm install @material-ui/core @material-ui/icons --legacy-peer-deps`
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
