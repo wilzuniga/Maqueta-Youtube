@@ -25,8 +25,8 @@ Mini YouTube es una versión simplificada de la página principal de YouTube, di
 
 ## Instalación y Ejecución
 ### `git clone https://github.com/tu-usuario/mini-youtube.git`
-### `npm install`
 ### `npm install @material-ui/core @material-ui/icons --legacy-peer-deps`
+### `npm install`
 ### `npm start`
 
 

@@ -52,12 +52,12 @@
 }
  /* hoover efects */
 
-.videoCubo:hover{
+.shorts:hover{
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
     cursor: pointer;
 }
 
-.videoImg:hover{
+.shortImg:hover{
     opacity: 0.8;
 }
 

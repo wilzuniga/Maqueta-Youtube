@@ -137,6 +137,19 @@ export const HomeWrapper = ({expanded}) => {
     'https://via.placeholder.com/150/FFD700',
     'https://via.placeholder.com/150/4B0082'];
 
+  const links = [
+    'https://youtu.be/dQw4w9WgXcQ?si=fk4VamIersGWiQzM',
+    'https://youtu.be/dQw4w9WgXcQ?si=fk4VamIersGWiQzM',
+    'https://youtu.be/dQw4w9WgXcQ?si=fk4VamIersGWiQzM',
+    'https://youtu.be/dQw4w9WgXcQ?si=fk4VamIersGWiQzM',
+    'https://youtu.be/dQw4w9WgXcQ?si=fk4VamIersGWiQzM',
+    'https://youtu.be/dQw4w9WgXcQ?si=fk4VamIersGWiQzM',
+    'https://youtu.be/dQw4w9WgXcQ?si=fk4VamIersGWiQzM',
+    'https://youtu.be/dQw4w9WgXcQ?si=fk4VamIersGWiQzM',
+    'https://youtu.be/dQw4w9WgXcQ?si=fk4VamIersGWiQzM',
+    'https://youtu.be/dQw4w9WgXcQ?si=fk4VamIersGWiQzM',
+  ];  
+
 
   
     
@@ -149,6 +162,7 @@ export const HomeWrapper = ({expanded}) => {
         {miniaturas.map((miniatura, index) => (
                   <VideoCubo
                       key={index}
+                      link={links[index]}
                       miniatura={miniatura}
                       locoCanal={avatares[index]}
                       titulo={titulos[index]}
@@ -168,6 +182,7 @@ export const HomeWrapper = ({expanded}) => {
         {miniaturas.map((miniatura, index) => (
                   <VideoCubo
                       key={index}
+                      link={links[index]}
                       miniatura={miniatura}
                       locoCanal={avatares[index]}
                       titulo={titulos[index]}
@@ -188,6 +203,7 @@ export const HomeWrapper = ({expanded}) => {
         {miniaturas.map((miniatura, index) => (
                   <VideoCubo
                       key={index}
+                      link={links[index]}
                       miniatura={miniatura}
                       locoCanal={avatares[index]}
                       titulo={titulos[index]}

@@ -5,6 +5,7 @@ import './VideoCubo.css'
 
 export const VideoCubo = (props) => {
   return (
+    <a href={props.link} className='videoCubolink'>
     <div className='videoCubo'>
             <img className="videoImg" src={props.miniatura}/>
             <div className="duration">
@@ -20,5 +21,6 @@ export const VideoCubo = (props) => {
             <MoreVert className="moreIcon" />
             </div>
         </div>
+    </a>
   )
 }
