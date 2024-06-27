@@ -19,6 +19,10 @@ Mini YouTube es una versión simplificada de la página principal de YouTube, di
 3. Debe implementar buenas prácticas de programación y diseño atómico.
 4. Utilizar imágenes y textos de muestra (hardcoded) para simular el contenido real de YouTube.
 
+## Imagenes
+![Imagen de la maqueta](https://raw.githubusercontent.com/wilzuniga/Maqueta-Youtube/main/Assets/Maqueta.png)
+
+
 ## Contribuyentes
 - Alberth Alexander Godoy 
 - Wilmer Antonio Zuniga
